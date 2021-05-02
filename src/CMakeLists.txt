@@ -1,5 +1,5 @@
 # Generic test that uses conan libs
-add_executable(game main.cpp input.h ImGuiHelpers.h utility.h)
+add_executable(game main.cpp game_state.cpp event_sfml.cpp event_serialize.cpp event_handler.cpp event_recorder.cpp render.cpp ImGuiHelpers.h utility.h)
 
 if (ENABLE_PCH)
     # This sets a global PCH parameter, each project will build its own PCH, which is a good idea if any #define's change
